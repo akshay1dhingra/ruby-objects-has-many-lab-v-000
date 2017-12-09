@@ -3,6 +3,8 @@ require 'pry'
 class Author
   attr_accessor :name
 
+  @@post_count = 0
+
   def initialize(name)
     @name = name
     @posts = []
@@ -15,6 +17,7 @@ class Author
   def add_post(post)
     @posts << post
     author.post = self
+    @@post_count += 1
   end
 
 
