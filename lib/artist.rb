@@ -7,7 +7,7 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-    binding.pry
+  #  binding.pry
   end
 
   def songs
@@ -30,5 +30,5 @@ class Artist
   def self.song_count
     @@song_count
   end
-binding.pry
+#binding.pry
 end
