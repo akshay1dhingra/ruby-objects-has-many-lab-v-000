@@ -24,6 +24,7 @@ class Author
     post = Post.new(title)
     @posts << post
     post.author = self
+    @@post_count += 1
   end
 
 
